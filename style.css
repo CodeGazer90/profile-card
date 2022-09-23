@@ -16,8 +16,11 @@ section{
     align-items: center;
     justify-content: center;
     background-color: hsl(185, 75%, 39%);
-    background-image:url(/images/bg-pattern-bottom.svg),url(/images/bg-pattern-top.svg) ;
-    background-position: left bottom, right top;
+    background-image:url(/images/bg-pattern-top.svg);
+    /* background-position: left; */
+    /* background-position-x:-75%; */
+    background-position: top;
+    background-repeat: no-repeat;
     
     padding: 100px 30px;
 }
@@ -51,6 +54,13 @@ grid-area: 2/1/3/4;
 text-align: center;
 border-bottom: .5px solid hsla(0, 0%, 59%, 0.261);
 font-weight: 700;
+}
+
+.item-2 img{
+    border-radius: 50%;
+    margin: -50px auto -20px auto;
+    border: 5px solid white;
+    overflow: hidden;
 }
 
 .item-2 h3{
